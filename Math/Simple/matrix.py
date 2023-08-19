@@ -1,6 +1,6 @@
 import numpy as np
 
-# ---matrix--- numpy
+# --- Matrix Operations using NumPy ---
 
 # Create two matrices
 matrix_a = np.array([[1, 2], [3, 4]])
@@ -13,6 +13,7 @@ matrix_product = np.dot(matrix_a, matrix_b)
 elementwise_sum = matrix_a + matrix_b
 elementwise_product = matrix_a * matrix_b
 
+# Display the matrices and results
 print("Matrix A:")
 print(matrix_a)
 

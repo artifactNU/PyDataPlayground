@@ -1,11 +1,26 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.integrate import odeint
 
-# --- Predetor/Prey-model Lotka-Volterra equations--- numpy, matplotlib, scipy
-
+# --- Predator/Prey Model using Lotka-Volterra Equations ---
+# Dependencies: numpy, matplotlib, scipy
 
 # Lotka-Volterra equations
 def lotka_volterra(X, t, alpha, beta, gamma, delta):
+    """
+    Lotka-Volterra equations describing predator-prey dynamics.
+
+    Parameters:
+    X (array): Array containing prey and predator populations.
+    t (array): Time points for integration.
+    alpha (float): Prey birth rate.
+    beta (float): Predation rate.
+    gamma (float): Predator death rate.
+    delta (float): Reproduction rate of predators.
+
+    Returns:
+    array: Rates of change for prey and predator populations.
+    """
     prey, predator = X
     dprey_dt = alpha * prey - beta * prey * predator
     dpredator_dt = delta * prey * predator - gamma * predator
@@ -24,7 +39,6 @@ initial_conditions = np.array([40, 9])
 t = np.linspace(0, 500, 1000)
 
 # Solve the differential equations
-from scipy.integrate import odeint
 solution = odeint(lotka_volterra, initial_conditions, t, args=(alpha, beta, gamma, delta))
 
 # Extract prey and predator populations from the solution

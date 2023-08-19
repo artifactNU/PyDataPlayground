@@ -1,17 +1,27 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
 from scipy.optimize import curve_fit
 
-# ---curve fitting--- numpy, matplotlib, scipy
+# --- Curve Fitting using NumPy, Matplotlib, and SciPy ---
 
-# Generate some synthetic data with noise
+# Generate synthetic data with noise
 np.random.seed(42)
 x_data = np.linspace(0, 10, 50)
 y_data = 2.5 * np.exp(-0.3 * x_data) + 0.5 * np.random.normal(size=50)
 
 # Define the model function
 def exponential_decay(x, a, b):
+    """
+    Exponential decay model function.
+
+    Parameters:
+    x (array): Input values.
+    a (float): Amplitude parameter.
+    b (float): Decay rate parameter.
+
+    Returns:
+    array: Computed exponential decay values.
+    """
     return a * np.exp(-b * x)
 
 # Fit the curve to the data
