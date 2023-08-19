@@ -1,13 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# --- Quantum Mechanics Simulation: Particle in a Potential Well ---
+# Use Case: Simulating the probability distribution of a particle confined in a potential well.
+# Theory: The simulation is based on the Schrödinger equation and demonstrates quantization of energy levels in a quantum system.
+
 # Parameters
-h_bar = 1.0  # Reduced Planck constant
-m = 1.0  # Particle mass
-L = 10.0  # Length of the potential well
-n_points = 200  # Number of grid points
-V0 = 100.0  # Potential energy at the barrier
-E = 50.0  # Initial guess for energy eigenvalue
+h_bar = 1.0           # Reduced Planck constant
+m = 1.0               # Particle mass
+L = 10.0              # Length of the potential well
+n_points = 200        # Number of grid points
+V0 = 100.0            # Potential energy at the barrier
+E = 50.0              # Initial guess for energy eigenvalue
 
 # Spatial grid
 x = np.linspace(0, L, num=n_points)

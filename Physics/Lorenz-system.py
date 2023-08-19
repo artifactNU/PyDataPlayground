@@ -2,8 +2,25 @@ import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 
+# --- Lorenz Attractor Visualization using NumPy, SciPy, and Matplotlib ---
+# Use Case: Visualizing chaotic behavior in a simplified atmospheric convection model known as the Lorenz system.
+# History: Developed by Edward Lorenz in 1963, the Lorenz system is a classic example of deterministic chaos and sensitivity to initial conditions.
+
 # Define the Lorenz system equations
 def lorenz(t, state, sigma, rho, beta):
+    """
+    Equations of the Lorenz system.
+
+    Parameters:
+    t (float): Time.
+    state (array): Array containing x, y, and z coordinates.
+    sigma (float): Prandtl number.
+    rho (float): Rayleigh number.
+    beta (float): Geometric parameter.
+
+    Returns:
+    array: Rates of change for x, y, and z coordinates.
+    """
     x, y, z = state
     dxdt = sigma * (y - x)
     dydt = x * (rho - z) - y

@@ -2,8 +2,23 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 
+# --- Simple Harmonic Motion Simulation using NumPy, Matplotlib, and SciPy ---
+# Use Case: Simulating the motion of a simple harmonic oscillator, like a mass attached to a spring.
+# History: The study of simple harmonic motion dates back to ancient Greece and is fundamental to understanding vibrations and oscillations in various systems.
+
 # Define the equations of motion for a simple harmonic oscillator
 def simple_harmonic(t, state, omega):
+    """
+    Equations of motion for a simple harmonic oscillator.
+
+    Parameters:
+    t (float): Time.
+    state (array): Array containing position and velocity.
+    omega (float): Angular frequency.
+
+    Returns:
+    array: Rates of change for position and velocity.
+    """
     x, v = state
     dxdt = v
     dvdt = -omega**2 * x

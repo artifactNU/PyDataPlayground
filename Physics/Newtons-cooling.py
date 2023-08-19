@@ -1,10 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# --- Newton's Law of Cooling Simulation using NumPy and Matplotlib ---
+# Use Case: Simulating the cooling of an object to its surrounding temperature over time.
+# History: Newton's Law of Cooling, formulated by Isaac Newton in the 17th century, describes the rate of heat loss from an object due to the temperature difference with its surroundings.
+
 # Parameters
-initial_temperature = 100.0  # Initial temperature in degrees Celsius
-ambient_temperature = 25.0  # Ambient temperature in degrees Celsius
-cooling_constant = 0.1  # Cooling constant
+initial_temperature = 100.0   # Initial temperature in degrees Celsius
+ambient_temperature = 25.0    # Ambient temperature in degrees Celsius
+cooling_constant = 0.1         # Cooling constant
 
 # Time points
 t = np.linspace(0, 20, num=100)

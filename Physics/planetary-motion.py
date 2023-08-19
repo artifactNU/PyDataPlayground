@@ -2,8 +2,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 
+# --- Planetary Motion Simulation using NumPy, SciPy, and Matplotlib ---
+# Use Case: Simulating the motion of a planet around the Sun under the influence of gravitational forces.
+# Theory: The simulation is based on Newton's law of universal gravitation and showcases Kepler's laws of planetary motion.
+
 # Define the equations of motion for planetary motion
 def planetary_motion(t, state, G, M):
+    """
+    Equations of motion for planetary motion.
+
+    Parameters:
+    t (float): Time.
+    state (array): Array containing x, y, vx, and vy coordinates.
+    G (float): Gravitational constant.
+    M (float): Mass of the central body.
+
+    Returns:
+    array: Rates of change for x, y, vx, and vy coordinates.
+    """
     x, y, vx, vy = state
     r = np.sqrt(x**2 + y**2)
     dxdt = vx
@@ -14,7 +30,7 @@ def planetary_motion(t, state, G, M):
 
 # Parameters
 G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
-M = 1.989e30  # Mass of the Sun in kg
+M = 1.989e30     # Mass of the Sun in kg
 
 # Initial conditions: position and velocity
 initial_state = [1.496e11, 0, 0, 2.978e4]  # Initial position: 1 AU, Initial velocity: Earth's orbital velocity

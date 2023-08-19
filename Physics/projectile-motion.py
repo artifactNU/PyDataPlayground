@@ -1,10 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# --- Projectile Motion Simulation using NumPy and Matplotlib ---
+# Use Case: Simulating the trajectory of a projectile launched at an angle.
+# Theory: The simulation is based on kinematic equations and demonstrates the motion of an object under the influence of gravity.
+
 # Parameters
-initial_velocity = 20.0  # Initial velocity in m/s
-angle_degrees = 45.0  # Launch angle in degrees
-gravity = 9.81  # Acceleration due to gravity in m/s^2
+initial_velocity = 20.0   # Initial velocity in m/s
+angle_degrees = 45.0      # Launch angle in degrees
+gravity = 9.81            # Acceleration due to gravity in m/s^2
 
 # Convert angle to radians
 angle_radians = np.radians(angle_degrees)
