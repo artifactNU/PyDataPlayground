@@ -46,6 +46,7 @@ decrypted_message = private_key.decrypt(
     )
 )
 
-# Print the original and decrypted messages
+# Print the original message, encrypted message, and decrypted message
 print(f"Original message: {message.decode('utf-8')}")
+print(f"Encrypted message: {ciphertext}")  # Print the encrypted message
 print(f"Decrypted message: {decrypted_message.decode('utf-8')}")
