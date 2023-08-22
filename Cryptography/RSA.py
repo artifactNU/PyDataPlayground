@@ -10,7 +10,7 @@ from cryptography.hazmat.primitives import hashes
 # Generate an RSA key pair
 private_key = rsa.generate_private_key(
     public_exponent=65537,  # A common value for the public exponent
-    key_size=2048  # Key size in bits
+    key_size=2048           # Key size in bits
 )
 
 # Serialize the private key in PEM format
