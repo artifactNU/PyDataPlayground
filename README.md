@@ -18,10 +18,12 @@ To run the scripts in this repository, you'll need the following libraries:
     NumPy
     SciPy
     Matplotlib
+    python-gnupg
+    cryptography
     
 You can install these libraries using the following command:
 ```
-pip install numpy scipy matplotlib
+pip install numpy scipy matplotlib python-gnupg cryptography
 ```
 
 ## Contribution Guidelines
