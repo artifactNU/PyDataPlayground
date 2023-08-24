@@ -14,7 +14,7 @@ def golden_ratio_approximation(sequence):
     return ratios
 
 # Change the value of 'num_terms' to generate a different number of terms
-num_terms = 11
+num_terms = 10
 fib_sequence = fibonacci_sequence(num_terms)
 golden_ratios = golden_ratio_approximation(fib_sequence)
 
