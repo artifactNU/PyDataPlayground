@@ -1,3 +1,5 @@
+# Fernet is built on top of the AES algorithm in CBC mode providing a interface
+# for encryption, decryption, and key management.
 # AES (Advanced Encryption Standard) is a widely used symmetric encryption algorithm.
 # It was established as a standard by NIST (National Institute of Standards and Technology) in 2001.
 
