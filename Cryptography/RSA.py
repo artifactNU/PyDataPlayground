@@ -1,7 +1,6 @@
 # RSA (Rivest-Shamir-Adleman) is a widely used asymmetric encryption algorithm.
 # It was invented in 1977 and is unique due to its reliance on the difficulty of factoring large composite numbers.
 
-# Import necessary modules from the cryptography library
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives.asymmetric import padding

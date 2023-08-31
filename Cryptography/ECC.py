@@ -2,7 +2,6 @@
 # over finite fields to provide strong security with relatively small key sizes. ECC was first proposed by Neal Koblitz and
 # Victor S. Miller independently in the mid-1980s.
 
-# Import the necessary modules from the cryptography library
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import ec
 from cryptography.hazmat.primitives import hashes

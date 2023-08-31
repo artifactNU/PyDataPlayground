@@ -3,7 +3,6 @@
 # AES (Advanced Encryption Standard) is a widely used symmetric encryption algorithm.
 # It was established as a standard by NIST (National Institute of Standards and Technology) in 2001.
 
-# Import the necessary module from the cryptography library
 from cryptography.fernet import Fernet
 
 # Generate a random symmetric key

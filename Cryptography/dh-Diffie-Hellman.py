@@ -2,7 +2,6 @@
 # secure key exchange over an untrusted communication channel.
 # Invented by Whitfield Diffie and Martin Hellman in 1976.
 
-# Import the necessary modules from the cryptography library
 from cryptography.hazmat.primitives.asymmetric import dh
 from cryptography.hazmat.primitives import serialization
 
