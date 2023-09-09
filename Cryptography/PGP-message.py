@@ -9,7 +9,7 @@ your_private_key = "C:/path/to/your_private_key.asc"
 """
 
 # Message to be encrypted and signed
-message = "This is a secret message."
+message = "A secret message."
 
 # Initialize GPG instance
 gpg = gnupg.GPG()
